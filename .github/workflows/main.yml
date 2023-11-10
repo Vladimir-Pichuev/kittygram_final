@@ -130,7 +130,7 @@ jobs:
         with:
           context: ./nginx/
           push: true
-          tags: axeunder/kittygram_gateway:latest
+          tags: vladimirpichuev/kittygram_gateway:latest
 
   deploy:
     runs-on: ubuntu-latest
