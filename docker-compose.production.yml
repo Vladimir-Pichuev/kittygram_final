@@ -3,7 +3,7 @@ version: '3'
 volumes:
   pg_data_production_kit:
   static_volume_kit:
-  media_volume_kit:
+  media:
 
 services:
   db:
@@ -19,7 +19,7 @@ services:
       - db
     volumes:
       - static_volume_kit:/backend_static/
-      - media_volume_kit:/cats/media
+      - media:/media/
 
   frontend:
     env_file: .env
@@ -27,6 +27,7 @@ services:
     command: cp -r /app/build/. /frontend_static/
     volumes:
       - static_volume_kit:/frontend_static/
+      - media:/media/
 
   gateway:
     image: vladimirpichuev/kittygram_nginx
@@ -38,4 +39,3 @@ services:
       - 9000:80
     volumes:
       - static_volume_kit:/staticfiles/
-      - media_volume_kit:/cats/media
