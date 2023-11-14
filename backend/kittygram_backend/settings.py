@@ -6,11 +6,12 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv()
+
 SECRET_KEY = os.environ['SECRET_KEY']
 
 DEBUG = os.environ['DEBUG'].lower()
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ['ALLOWED_HOSTS'].split(',')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
