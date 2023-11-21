@@ -21,7 +21,6 @@ services:
       - static:/backend_static/
       - media:/app/media/
     
-
   frontend:
     env_file: .env
     build: ./frontend/
