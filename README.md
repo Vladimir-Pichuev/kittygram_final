@@ -12,7 +12,7 @@
 • djoser==2.1.0
 
 ## Автор
-Vladimir-Pichuev
+[@Vladimir-Pichuev](https://github.com/Vladimir-Pichuev)
 
 ### Как запустить проект:
 
