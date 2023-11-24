@@ -2,7 +2,7 @@
 
 
 
-[![main](https://github.com/Vladimir-Pichuev/kittygram_final/workflows/main.yml/badge.svg)](https://github.com/Vladimir-Pichuev/kittygram_final/actions/workflows/main.yml)
+![main](https://github.com/Vladimir-Pichuev/kittygram_final/actions/workflows/main.yml/badge.svg)
 
 ## Описание проекта
 Проект, где пользователи могут регистрироваться, загружать фотографии кошек с описанием их достижений, а также любоваться на других котов.
